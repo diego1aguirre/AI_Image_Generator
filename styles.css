@@ -1,0 +1,177 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh; /* Ensures the body takes up at least full height */
+}
+
+/* Header Styles */
+header {
+    background-color: #001f3f;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds slight shadow below the header */
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Section with the Input Field */
+.bottom-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adds spacing between header and input */
+}
+
+/* Input Container Styles */
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px; /* Creates a rounded input box */
+    padding: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for input container */
+    position: relative;
+}
+
+/* Input Field Styles */
+input {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px; /* Rounds the input field */
+    font-size: 18px;
+    color: #333; /* Dark text color */
+    outline: none;
+    font-weight: 500;
+}
+
+/* Search Button Styles */
+button#submit-icon {
+    background-color: #001f3f; /* Dark background color */
+    border: none;
+    padding: 10px;
+    border-radius: 50%; /* Rounds the search button */
+    color: white;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover Effect for Search Button */
+button#submit-icon:hover {
+    background-color: #0056b3;
+}
+
+/* Image Section for Displaying Generated Images */
+.images-section {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Individual Image Container Styles */
+.image-container {
+    width: 48%; /* Takes up 48% of width, leaving space for another image on the same line */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+/* Image Styles */
+.image-container img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to the top of the footer */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Links in Footer (Email, GitHub, LinkedIn) */
+footer a {
+    color: #4facf7; /* Light blue color for links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff; /* White color on hover */
+}
+
+/* Loading Spinner */
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the spinner */
+    font-size: 3rem;
+    color: #001f3f;
+}
+
+/* Spinner Animation */
+.spinner i {
+    animation: spin 1s infinite linear;
+}
+
+/* Keyframes for Spinner Rotation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .image-container {
+        width: 100%; /* Ensures image containers take full width on smaller screens */
+    }
+
+    #submit-icon {
+        top: 5px;
+        right: 10px;
+    }
+
+    h1 {
+        font-size: 2rem; /* Slightly smaller heading on mobile */
+    }
+
+    input {
+        font-size: 16px; /* Smaller input text for smaller screens */
+    }
+}

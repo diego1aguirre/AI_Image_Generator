@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Image Generator by Diego Aguirre</title>
+  <!-- Linking external stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome icons for search, email, GitHub, LinkedIn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Main header for the application -->
+  <header>
+    <h1>AI Image Generator</h1>
+  </header>
+
+  <!-- Section containing the input field and search button -->
+  <section class="bottom-section">
+    <div class="input-container">
+      <!-- Input for the prompt -->
+      <input type="text" placeholder="Enter your prompt here" />
+      <!-- Button with a search icon -->
+      <button id="submit-icon">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- Section where the generated images will be displayed -->
+  <section class="images-section">
+    <!-- Images will be displayed here -->
+  </section>
+
+  <!-- Loading spinner, hidden by default -->
+  <div class="spinner" id="spinner" style="display: none;">
+    <i class="fas fa-spinner"></i>
+  </div>
+
+  <!-- Footer section containing contact and social media links -->
+  <footer class="footer-card">
+    <p>© 2024 Diego Aguirre - AI Logo Generator</p>
+    <p>
+        <!-- Email link -->
+        <a href="mailto:diego1992aguirre@gmail.com">
+            <i class="fa-solid fa-envelope"></i> Email
+        </a>
+        <!-- GitHub link -->
+        <a href="https://github.com/diego1aguirre" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <!-- LinkedIn link -->
+        <a href="https://www.linkedin.com/in/diego-aguirre-guerra/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+    </p>
+  </footer>
+
+  <!-- Linking JavaScript file for the functionality of the application -->
+  <script src="app.js"></script>
+</body>
+</html>
